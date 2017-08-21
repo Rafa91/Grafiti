@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		298622551E85A4BE004FBA4D /* GraffitiImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298622541E85A4BE004FBA4D /* GraffitiImageViewController.swift */; };
 		29F45FB51E83F90B0043E16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F45FB41E83F90B0043E16F /* AppDelegate.swift */; };
-		29F45FB71E83F90B0043E16F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F45FB61E83F90B0043E16F /* ViewController.swift */; };
+		29F45FB71E83F90B0043E16F /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F45FB61E83F90B0043E16F /* CurrentLocationViewController.swift */; };
 		29F45FBA1E83F90B0043E16F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F45FB81E83F90B0043E16F /* Main.storyboard */; };
 		29F45FBC1E83F90B0043E16F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29F45FBB1E83F90B0043E16F /* Assets.xcassets */; };
 		29F45FBF1E83F90B0043E16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29F45FBD1E83F90B0043E16F /* LaunchScreen.storyboard */; };
+		29F45FC81E841B880043E16F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F45FC71E841B880043E16F /* MapKit.framework */; };
+		29F45FCA1E841D8E0043E16F /* GraffitiDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F45FC91E841D8E0043E16F /* GraffitiDetailsViewController.swift */; };
+		29F45FCC1E841F650043E16F /* Graffiti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F45FCB1E841F650043E16F /* Graffiti.swift */; };
+		29F45FCE1E8442A50043E16F /* GraffitiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F45FCD1E8442A50043E16F /* GraffitiManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		298622541E85A4BE004FBA4D /* GraffitiImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiImageViewController.swift; sourceTree = "<group>"; };
 		29F45FB11E83F90B0043E16F /* Graffiti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Graffiti.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F45FB41E83F90B0043E16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29F45FB61E83F90B0043E16F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29F45FB61E83F90B0043E16F /* CurrentLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationViewController.swift; sourceTree = "<group>"; };
 		29F45FB91E83F90B0043E16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29F45FBB1E83F90B0043E16F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29F45FBE1E83F90B0043E16F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29F45FC01E83F90B0043E16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29F45FC71E841B880043E16F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		29F45FC91E841D8E0043E16F /* GraffitiDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiDetailsViewController.swift; sourceTree = "<group>"; };
+		29F45FCB1E841F650043E16F /* Graffiti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graffiti.swift; sourceTree = "<group>"; };
+		29F45FCD1E8442A50043E16F /* GraffitiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraffitiManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F45FC81E841B880043E16F /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				29F45FB31E83F90B0043E16F /* Graffiti */,
 				29F45FB21E83F90B0043E16F /* Products */,
+				29F45FC61E841B870043E16F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +67,25 @@
 			isa = PBXGroup;
 			children = (
 				29F45FB41E83F90B0043E16F /* AppDelegate.swift */,
-				29F45FB61E83F90B0043E16F /* ViewController.swift */,
+				29F45FB61E83F90B0043E16F /* CurrentLocationViewController.swift */,
+				29F45FC91E841D8E0043E16F /* GraffitiDetailsViewController.swift */,
+				298622541E85A4BE004FBA4D /* GraffitiImageViewController.swift */,
 				29F45FB81E83F90B0043E16F /* Main.storyboard */,
 				29F45FBB1E83F90B0043E16F /* Assets.xcassets */,
 				29F45FBD1E83F90B0043E16F /* LaunchScreen.storyboard */,
 				29F45FC01E83F90B0043E16F /* Info.plist */,
+				29F45FCB1E841F650043E16F /* Graffiti.swift */,
+				29F45FCD1E8442A50043E16F /* GraffitiManager.swift */,
 			);
 			path = Graffiti;
+			sourceTree = "<group>";
+		};
+		29F45FC61E841B870043E16F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29F45FC71E841B880043E16F /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29F45FB71E83F90B0043E16F /* ViewController.swift in Sources */,
+				29F45FB71E83F90B0043E16F /* CurrentLocationViewController.swift in Sources */,
+				29F45FCC1E841F650043E16F /* Graffiti.swift in Sources */,
+				29F45FCE1E8442A50043E16F /* GraffitiManager.swift in Sources */,
 				29F45FB51E83F90B0043E16F /* AppDelegate.swift in Sources */,
+				298622551E85A4BE004FBA4D /* GraffitiImageViewController.swift in Sources */,
+				29F45FCA1E841D8E0043E16F /* GraffitiDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +328,7 @@
 				29F45FC51E83F90B0043E16F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
